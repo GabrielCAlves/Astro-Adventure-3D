@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using DG.Tweening;
 using Ebac.StateMachine;
 using Core.Singleton;
 using Cloth;
+using UnityEngine.UI;
 
 public class Player : Singleton<Player>, IDamageable
 {
@@ -42,6 +44,8 @@ public class Player : Singleton<Player>, IDamageable
 
     private GetPlayerPrefabAnimator _cameraController;
 
+    private int _buildDeathCount = 0;
+
     public enum PlayerStates
     {
         RUN,
@@ -78,6 +82,8 @@ public class Player : Singleton<Player>, IDamageable
     public List<FlashColor> flashcolors;
 
     public bool boostedSpeed = false;
+
+    public List<UIFillUpdater> uiFillUpdaters;
 
 
     private Vector3 _regularScale;
@@ -228,7 +234,12 @@ public class Player : Singleton<Player>, IDamageable
             jumpState();
         }
 
-        if (healthBase.currentLife <= 0 && !_cancelOtherAnim)
+        if(healthBase.currentLife <= 0 && _buildDeathCount == 0)
+        {
+            ++_buildDeathCount;
+            healthBase.currentLife = 10;
+        }
+        else if (healthBase.currentLife <= 0 && !_cancelOtherAnim && _buildDeathCount > 0)
         {
             Debug.Log("(Update) healthBase.currentLife = " + healthBase.currentLife);
 
@@ -236,7 +247,7 @@ public class Player : Singleton<Player>, IDamageable
             stateMachine.SwitchState(PlayerStates.DEATH, soPlayerSetup, _currentPlayer, death);
 
             PlaySFX(sfxType[1]);
-        
+
             if (CheckpointManager.Instance.HasCheckpoint())
             {
                 respawnPosition = CheckpointManager.Instance.GetPositionFromLastCheckpoint();

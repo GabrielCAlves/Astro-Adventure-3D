@@ -11136,7 +11136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLife: 10
-  currentLife: 0
+  currentLife: 10
   destroyOnKill: 1
   uiFillUpdater: {fileID: 1141620990}
   damageMultiply: 1
@@ -11177,6 +11177,7 @@ MonoBehaviour:
   speed: 1
   flashcolors: []
   boostedSpeed: 0
+  uiFillUpdaters: []
 --- !u!114 &810726083
 MonoBehaviour:
   m_ObjectHideFlags: 0

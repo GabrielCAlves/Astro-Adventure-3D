@@ -36,7 +36,7 @@ public class CheckpointBase : MonoBehaviour
     private void TurnItOn()
     {
         meshRenderer.material.SetColor("_EmissionColor", Color.white);
-        textMeshProUGUI.text = "Checkpoint Ativado!";
+        textMeshProUGUI.text = "Checkpoint Activated!";
         StartCoroutine(MessageCoroutine());
     }
 
