@@ -1,5 +1,5 @@
 🇬🇧
-Details:
+# Details:
 - Continuation of the Astro-Adventure-3D-Unity-Developer-Module-39 project;
 - Added 3 sound effects;
 - Added ambient music;
@@ -53,7 +53,7 @@ Details:
 - Particle and other animations are enabled when clicking Play;
 
 🇧🇷
-Detalhes:
+# Detalhes:
 - Continuidade do projeto Astro-Adventure-3D-Unity-Developer-Module-39;
 - Adicionados 3 efeitos sonoros;
 - Adicionada uma música ambiente;
