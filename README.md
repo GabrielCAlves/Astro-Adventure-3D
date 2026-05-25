@@ -1,1 +1,110 @@
-# Desenvolvedor-Unity-Module-40
+🇬🇧
+Details:
+- Continuation of the Astro-Adventure-3D-Unity-Developer-Module-39 project;
+- Added 3 sound effects;
+- Added ambient music;
+- Added option to turn sound on and off;
+- Final build ready for export;
+- Added save menu and load menu;
+- Saving progress at different points in the game (checkpoints).
+- Storage of data on which outfit the player was wearing and their health status upon returning to the game;
+- Loading of progress, that is, when loading the game, all information is also loaded.
+- Added 3 VFX: a. Dust when the player runs; b. Lighting on the weapon when firing; c. Color change of enemies when they take damage;
+- Added a basic outfit, only changing its color;
+- Also added an outfit that makes the character faster;
+- Added an outfit that alters the character's life attribute.
+- Added a chest that gives X amount of coins when opened;
+- Added destructible objects that drop coins;
+- Added coins that can be collected by the main hero and appear in the interface;
+- Also added an inventory where the hero can store items;
+- Added a usable healing item to the inventory (shown in the game interface how the player will use this object);
+- Used items and interface update.
+- Added Post Processing installation to the main scene;
+- Added a vignette, working in Post Processing;
+- Added camera following player using Cinemachine;
+- Enabled a Screenshake on the camera when the hero takes damage.
+- Added life to the hero;
+- Added checkpoints;
+- Upon death, it is possible to restart at the last checkpoint;
+- Use of reusable components;
+- Developed scripts that can be easily added and removed;
+- Developed player life indicator with a script that easily adapts to various UI display types;
+- Added on-screen messages to reinforce what is happening in the game to the player. For example, after a checkpoint is activated, a UI message, "Checkpoint active," is displayed in the center of the screen for a few seconds.
+- Added one more enemy and a boss;
+- Boss appearance using a trigger. Thus, when the player activates the trigger, the enemy appears, starts walking and attacking;
+- Semi-assembled stage, with one level, enemies scattered throughout the stage;
+- Enemies "look" at the main character, done by: rotation and forward vector pointing: transform.LookAt(transform);
+- Added two types of enemies;
+- Each enemy has a life, a death state, and is affected by weapons;
+- Configured how much life each enemy has, so the weapon can be weaker or stronger against them;
+- When the enemy runs out of life, it dies and is destroyed;
+- Created a particle for enemy death.
+- Added a weapon that can fire with a 0.2-second interval between shots;
+- Also added a second weapon that has multi-shot behavior;
+- Added the ability to switch weapons using keys 1 and 2;
+- Added a scene where the character can walk in all 4 directions and the Idle and Running animations;
+- Character can: Stop, Walk, Run and Die.
+- Added a character that can walk forward, stop, and jump.
+- These movements are controlled with the State Machine;
+- New class created with an extension created to randomize list items;
+- Button created that appears in the script's Inspector. Clicking it can create a GameObject in the scene;
+- A main menu with 3 buttons has been created: Play, About, and Exit;
+- Animations have been created for the buttons and images;
+- Particle and other animations are enabled when clicking Play;
+
+🇧🇷
+Detalhes:
+- Continuidade do projeto Astro-Adventure-3D-Unity-Developer-Module-39;
+- Adicionados 3 efeitos sonoros;
+- Adicionada uma música ambiente;
+- Adicionado opção de ligar e desligar o som;
+- Build final pronta para exportação;
+- Adicionado menu de salvar e carregar;
+- Salvamento do progresso em diferentes pontos do jogo (pontos de verificação);
+- Armazenamento de dados sobre qual roupa o jogador estava usando e seu estado de saúde ao retornar ao jogo;
+- Carregamento do progresso, ou seja, ao carregar o jogo, todas as informações também são carregadas;
+- Adicionados 3 efeitos visuais:
+    a. Poeira quando o jogador corre;
+    b. Iluminação na arma ao disparar;
+    c. Mudança de cor dos inimigos quando sofrem dano;
+- Adicionada uma roupa básica, que altera apenas a cor;
+- Adicionada também uma roupa que aumenta a velocidade do personagem;
+- Adicionada uma roupa que altera o atributo de vida do personagem;
+- Adicionado um baú que concede uma certa quantidade de moedas ao ser aberto;
+- Adicionados objetos destrutíveis que liberam moedas;
+- Adicionadas moedas que podem ser coletadas pelo herói principal e aparecem na interface;
+- Adicionado também um inventário onde o herói pode armazenar itens;
+- Adicionado um item de cura utilizável ao inventário (mostrado na interface do jogo como o jogador usará este item);
+- Atualização dos itens usados ​​e da interface.
+- Adicionada instalação de pós-processamento à cena principal;
+- Adicionada vinheta, funcionando em pós-processamento;
+- Adicionada câmera seguindo o jogador usando Cinemachine;
+- Habilitada trepidação da câmera quando o herói sofre dano;
+- Adicionada vida ao herói;
+- Adicionados pontos de controle;
+- Ao morrer, é possível reiniciar no último ponto de controle;
+- Utilização de componentes reutilizáveis;
+- Desenvolvidos scripts que podem ser facilmente adicionados e removidos;
+- Desenvolvido indicador de vida do jogador com um script que se adapta facilmente a vários tipos de exibição de interface;
+- Adicionadas mensagens na tela para reforçar o que está acontecendo no jogo para o jogador. Por exemplo, após um ponto de controle ser ativado, uma mensagem na interface, "Ponto de controle ativo", é exibida no centro da tela por alguns segundos;
+- Adicionado mais um inimigo e um chefe;
+- Aparição do chefe usando um gatilho. Assim, quando o jogador ativa o gatilho, o inimigo aparece, começa a andar e atacar;
+- Fase semi-montada, com um nível e inimigos espalhados por toda parte;
+- Os inimigos "olham" para o personagem principal, através de rotação e apontamento vetorial para frente: transform.LookAt(transform);
+- Adicionados dois tipos de inimigos;
+- Cada inimigo possui uma vida, um estado de morte e é afetado por armas;
+- Configurada a quantidade de vida de cada inimigo, para que a arma seja mais fraca ou mais forte contra eles;
+- Quando o inimigo fica sem vida, ele morre e é destruído;
+- Criada uma partícula para a morte do inimigo;
+- Adicionada uma arma que dispara com um intervalo de 0,2 segundos entre os tiros;
+- Adicionada também uma segunda arma com disparo múltiplo;
+- Adicionada a capacidade de trocar de armas usando as teclas 1 e 2;
+- Adicionada uma cena onde o personagem pode andar em todas as 4 direções e as animações de inatividade e corrida;
+- O personagem pode: Parar, Andar, Correr e Morrer;
+- Adicionado um personagem que pode andar para frente, parar e pular.
+- Esses movimentos são controlados pela Máquina de Estados;
+- Nova classe criada com uma extensão para randomizar itens da lista;
+- Botão criado que aparece no Inspector do script. Clicar nele cria um GameObject na cena;
+- Um menu principal com 3 botões foi criado: Jogar, Sobre e Sair;
+- Animações foram criadas para os botões e imagens;
+- Animações de partículas e outras animações são habilitadas ao clicar em Jogar;
